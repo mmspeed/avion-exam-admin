@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #e4e9f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 15px;
+  background-color: white;
+}
+
+header {
+  position: relative;
+}
+
+.sidebarText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebarLogo {
+  font-size: 20px;
+  padding: 10px 10px;
+  background-color: #695cfe;
+  border: 2px solid #695cfe;
+  border-radius: 10px;
+  color: white;
+  font-weight: 900;
+  margin-right: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sidebarLogo:hover {
+  background-color: white;
+  border: 2px solid #695cfe;
+  color: #695cfe;
+}
+
+.sidebarInfo {
+  font-size: 20px;
+  color: #707070;
+  font-weight: 700;
+}
+
+.toggle {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  background-color: #695cfe;
+  border: 2px solid #695cfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  background-color: white;
+  border: 2px solid #695cfe;
+  color: #695cfe;
+}
+
+.navLink {
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  color: #707070;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navLink:hover {
+  background-color: #695cfe;
+  color: white;
+}
+
+.ic {
+  min-width: 50px;
+  font-size: 20px;
+}
+
+.icm {
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.navL {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.menuBar {
+  height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* darkMode */
+
+.darkM {
+  background-color: #e4e9f7;
+  margin-top: 0;
+}
+
+.darkM:hover {
+  background-color: #e4e9f7;
+  color: #707070;
+}
+
+.darkM {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+/* general */
+
+.notMess {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 250px;
+  background-color: white;
+  height: 80px;
+}
+
+.notMess2 {
+  margin-left: 250px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  height: 50px;
+  width: 1px;
+  background-color: black;
+}
+
+.welcome {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* notFound */
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.fourZeroFour {
+  margin-right: 20px;
+}
+
+.line2 {
+  height: 70px;
+  width: 1px;
+  background-color: black;
+  margin-right: 20px;
+}
+
+.pageNot {
+  margin-bottom: 5px;
+}
+
+.backPage {
+  color: #695cfe;
+  font-size: 20px;
+}
+
+/* login */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.formOblako {
+  background-color: white;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.formSt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.loginText {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.loginSubmit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.formInput {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #707070;
+  font-size: 16px;
+}
+
+.formSubmit {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #695cfe;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #695cfe;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.formSubmit:hover {
+  background-color: white;
+  color: #695cfe;
+  border: 2px solid #695cfe;
+}
+
+/* home */
+
+.homeText {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.youCanDo {
+  font-size: 20px;
+}
+
+.privacyPolicy {
+  text-align: center;
+}
+
+.priorities {
+  margin-top: 20px;
+}
+
+.priorities p {
+  margin-bottom: 6px;
+}
+
+/* products */
+
+.card {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.inform {
+  display: flex;
+  align-items: center;
+}
+
+.inform img {
+  margin-right: 20px;
+}
+
+.anyBtn {
+  padding: 10px 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.productEdit {
+  margin-right: 10px;
+  background-color: #695cfe;
+  border: 2px solid #695cfe;
+}
+
+.productEdit:hover {
+  background-color: white;
+  color: #695cfe;
+  border: 2px solid #695cfe;
+}
+
+.productDelete {
+  background-color: red;
+  border: 2px solid red;
+}
+
+.productDelete:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.productTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.productDescription {
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+
+.productPrice {
+  font-size: 16px;
+}
+
+.formik {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formSearch {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px;
+  border-radius: 15px;
+  background-color: #d1dbf6;
+  border: 2px solid #becdf5;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.searchBtn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  background-color: #becdf5;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.productImg {
+  border-radius: 15px;
+}
+
+.productFunctions {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productAdd {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.productAdd:hover {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+}
