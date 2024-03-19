@@ -37,7 +37,6 @@ const Home = () => {
           <p>3. Edit A Product</p>
           <p>4. Delete A Product</p>
           <p>5. Search A Product</p>
-          <p>6. Use Dark Mode</p>
         </div>
       </div>
     </>

@@ -38,7 +38,7 @@ const Sidebar = () => {
         </div>
         <div className="sideBarBottom">
           <li>
-            <a href="/login" onClick={logout} className="navLink darkM">
+            <a href="/" onClick={logout} className="navLink darkM">
               <IoLogOut className="ic" />
               <h4 className="navL">LogOut</h4>
             </a>

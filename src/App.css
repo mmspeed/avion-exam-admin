@@ -17,6 +17,10 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 /* sidebar */
 
 .sidebar {
@@ -133,16 +137,13 @@ header {
 .darkM {
   background-color: #e4e9f7;
   margin-top: 0;
+  margin-right: 20px;
+  padding: 10px;
 }
 
 .darkM:hover {
   background-color: #e4e9f7;
   color: #707070;
-}
-
-.darkM {
-  margin-right: 20px;
-  padding: 10px;
 }
 
 /* general */
@@ -313,6 +314,7 @@ header {
 .inform {
   display: flex;
   align-items: center;
+  width: 70%;
 }
 
 .inform img {
@@ -410,14 +412,15 @@ header {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 5px;
+  padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .productAdd {
-  background-color: black;
-  border: 2px solid black;
+  background-color: #becdf5;
+  border: 2px solid #695cfe;
   color: white;
   padding: 15px;
   border-radius: 15px;
@@ -429,9 +432,99 @@ header {
 
 .productAdd:hover {
   background-color: white;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #becdf5;
+  color: #becdf5;
+}
+
+.darkMM {
+  background-color: #e4e9f7;
+  margin-top: 0;
+  padding: 10px;
+}
+
+.darkMM:hover {
+  background-color: #e4e9f7;
+  color: #707070;
+}
+
+.noData {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* edit */
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.functionText {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.functionBtn {
+  margin-top: 10px;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 18px;
+  background-color: #695cfe;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+  border: 2px solid #695cfe;
+  cursor: pointer;
+}
+
+.functionBtn:hover {
+  background-color: white;
+  color: #695cfe;
+  border: 2px solid #695cfe;
+}
+
+.formPage input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* pagination */
+
+.pagination {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageItem {
+  margin-left: 20px;
+  border: 2px solid;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.pageItem:hover {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
+
+.kindHeader {
+  position: fixed;
+  width: 84%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
