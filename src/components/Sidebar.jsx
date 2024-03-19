@@ -4,7 +4,7 @@ import { IoLogOut } from "react-icons/io5";
 
 const Sidebar = () => {
   const logout = () => {
-    localStorage.clear();
+    localStorage.removeItem("signIn");
     window.location.reload();
     alert("Do you want to logout ?");
   };
@@ -38,10 +38,10 @@ const Sidebar = () => {
         </div>
         <div className="sideBarBottom">
           <li>
-            <button onClick={logout} className="navLink darkM">
+            <a href="/login" onClick={logout} className="navLink darkM">
               <IoLogOut className="ic" />
               <h4 className="navL">LogOut</h4>
-            </button>
+            </a>
           </li>
         </div>
       </div>
